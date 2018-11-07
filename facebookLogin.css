@@ -4,6 +4,21 @@
     src: url(Klavika\ Bold\ Bold\ OSF.otf);
 }
 
+@font-face {
+    font-family: freight;
+    src: url(Freight\ Sans\ Medium.otf);
+}
+
+@font-face {
+    font-family: freightB;
+    src: url(Freight\ Sans\ Bold.otf);
+}
+
+@font-face {
+    font-family: freightM;
+    src: url(Freight\ Sans\ Medium\ SC.otf);
+}
+
 * {
    margin: 0;
 }
@@ -80,18 +95,55 @@ h1 {
 
 .leftSide {
     display: grid;
-   justify-content: left;
+   justify-content: space-between;
    padding-top: 40px;
 }
 
 #connectSentence {
     font-size: 28px;
-    font-family: Klavika;
+    font-family: freight;
+    font-weight: bolder;
+    color: #333333;
+    font-size: 31px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    padding-bottom: 42px;
+    width: 100%;
 }
 
 .signUp {
     display: grid;
-    grid-area: 1 / 2 / 1 / 2;
+    grid-template-rows: min-content;
 }
 
+.descriptions {
+    display: flex;
+    justify-content: flex-start;
+    font-family: freight;
+    font-size: 16px;
+    line-height: 40px;
+    color: #666666;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
 
+b {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding-right: 5px;
+}
+
+img {
+    padding-right: 15px;
+}
+
+#signText {
+    font-family: freight;
+    font-size: 39px;
+    font-weight: bolder;
+    width: 339px;
+    height: 44px;
+    padding-bottom: 10px;
+}
